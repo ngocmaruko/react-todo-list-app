@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 
 function TodoList() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState([
+  { description: 'Learn JavaScript', date: '2024-2-23' },
+  { description: 'Edit Resume', date: '2024-2-24' }
+]);
   const [newTask, setNewTask] = useState('');
   const [newDate, setNewDate] = useState('');
 
